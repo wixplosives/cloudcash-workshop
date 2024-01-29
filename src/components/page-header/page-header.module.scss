@@ -12,16 +12,16 @@
 }
 
 @media only screen and (min-width: #{$media-tablet + 1}) {
-    .utilities {
-    }
+    .utilities {}
 }
 
 @media only screen and (max-width: #{$media-tablet}) {
-    .utilities {
-    }
+    .utilities {}
 }
 
 .utilities {
+    display: flex;
+    column-gap: 10px;
 }
 
 .actionsSection {
@@ -41,9 +41,7 @@
     height: 2.5rem;
     width: 2.5rem;
     border-radius: $radius-pill;
-    background: $color-accent
-        url('https://static.wixstatic.com/shapes/610b66_b4d73c785beb4b1daddded7d0cd17bb7.svg')
-        no-repeat center; // avatar-default.svg (36x36)
+    background: $color-accent url('https://static.wixstatic.com/shapes/610b66_b4d73c785beb4b1daddded7d0cd17bb7.svg') no-repeat center; // avatar-default.svg (36x36)
     background-color: $color-accent;
     background-size: cover;
 }
