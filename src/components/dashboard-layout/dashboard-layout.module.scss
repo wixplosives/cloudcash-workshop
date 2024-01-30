@@ -4,13 +4,10 @@
 .root {
     min-height: 100%;
 
-    @media (max-width: 450px) {
-    background-color: salmon;
+    @media only screen and (min-width: #{$media-tablet + 1}) {
+        display: grid;
+        grid-template-columns: 16rem 1fr;
     }
-    // @media only screen and (min-width: #{$media-tablet + 1}) {
-    //     display: grid;
-    //     grid-template-columns: 16rem 1fr;
-    // }
 }
 
 .header {
