@@ -9,12 +9,11 @@ interface BalanceProps {
 export const Balance = ({ className }: BalanceProps) => {
     return (
         <Card className={className}>
-            <Card.Title>Balance</Card.Title>
             <div className={styles.details}>
                 <BalanceDetail
                     currency="$"
                     label="Current Balance"
-                    amount={12000}
+                    amount={1200}
                     emphasized
                 />
                 <BalanceDetail

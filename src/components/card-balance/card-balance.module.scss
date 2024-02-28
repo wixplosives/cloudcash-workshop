@@ -1,0 +1,10 @@
+@import '../../styles/color';
+@import '../../styles/spacing';
+
+.root {}
+
+.contentLayout {
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}

@@ -18,7 +18,7 @@
     padding-bottom: $spacing-1-5;
     padding-left: $spacing-2-5;
     padding-right: $spacing-2-5;
-    background-color: $color-upgrade;
+    background-color: $color-yellow;
     color: $color-primary;
 
     &:focus-visible {
@@ -27,4 +27,6 @@
         outline: -moz-mac-focusring auto 1px;
         outline: -webkit-focus-ring-color auto 1px;
     }
+
+    border-radius: $radius-xx-large;
 }

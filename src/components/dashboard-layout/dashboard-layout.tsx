@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import { Sidebar } from '../sidebar/sidebar';
-import { Balance } from '../balance/balance';
 import { GetLoanBanner } from '../get-loan-banner/get-loan-banner';
 import { Goals } from '../goals/goals';
 import { NewTransaction } from '../new-transaction/new-transaction';
@@ -8,6 +7,7 @@ import { OutcomeStatistics } from '../outcome-statistics/outcome-statistics';
 import PageHeader from '../page-header/page-header';
 import { TransactionHistory } from '../transaction-history/transaction-history';
 import styles from './dashboard-layout.module.scss';
+import { CardBalance } from '../card-balance/card-balance';
 
 interface DashboardLayoutProps {
     className?: string;
@@ -34,7 +34,7 @@ export const DashboardLayout = ({ className }: DashboardLayoutProps) => {
                         )}
                     >
                         <div className={styles.mainColumn}>
-                            <Balance />
+                            <CardBalance title="Card Balance" />
                             <TransactionHistory />
                         </div>
                         <div className={styles.secondaryColumn}>
