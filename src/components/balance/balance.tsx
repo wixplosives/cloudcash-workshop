@@ -14,8 +14,8 @@ export const Balance = ({ className }: BalanceProps) => {
                 <BalanceDetail
                     currency="$"
                     label="Current Balance"
-                    amount={12000}
-                    emphasized
+                    amount={12008}
+                    emphasized={true}
                 />
                 <BalanceDetail
                     currency="$"
