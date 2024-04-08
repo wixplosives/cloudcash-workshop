@@ -16,7 +16,6 @@ interface SidebarProps {
 export const Sidebar = ({ className }: SidebarProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <img src={logo} alt="Cloudcash logo" />
             <Nav className={styles.nav}>
                 <Nav.Item selected>
                     <Icon glyph="insights" aria-hidden />
@@ -55,10 +54,13 @@ export const Sidebar = ({ className }: SidebarProps) => {
                     aria-hidden
                     alt=""
                 />
+                <img src={logo} alt="Cloudcash logo" />
                 <span className={styles.footerText}>
                     Give your money awesome space in cloud
                 </span>
-                <Button onClick={() => alert('Navigate to upgrade flow')}>Upgrade to Premium</Button>
+                <Button onClick={() => alert('Navigate to upgrade flow')}>
+                    Upgrade to Premium
+                </Button>
             </div>
         </div>
     );
