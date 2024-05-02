@@ -6,6 +6,7 @@ export default createBoard({
     Board: () => <TransactionHistory />,
     environmentProps: {
         canvasWidth: 874,
+        windowHeight: 800,
     },
     isSnippet: true,
 });

@@ -3,6 +3,7 @@ import Nav from '../nav/nav';
 import { Icon } from '../icon/icon';
 import { Button } from '../button/button';
 import styles from './sidebar.module.scss';
+import BrushSvg from '../../assets/images/illustrations/brush.svg';
 
 const logo =
     'https://static.wixstatic.com/shapes/610b66_0f8db3b01d974d6eb901be219f385e3f.svg'; // logo.svg (135x34)
@@ -16,6 +17,7 @@ interface SidebarProps {
 export const Sidebar = ({ className }: SidebarProps) => {
     return (
         <div className={classNames(styles.root, className)}>
+            <img src={BrushSvg} alt="Cloudcash logo" />
             <Nav className={styles.nav}>
                 <Nav.Item selected>
                     <Icon glyph="insights" aria-hidden />
@@ -54,7 +56,6 @@ export const Sidebar = ({ className }: SidebarProps) => {
                     aria-hidden
                     alt=""
                 />
-                <img src={logo} alt="Cloudcash logo" />
                 <span className={styles.footerText}>
                     Give your money awesome space in cloud
                 </span>

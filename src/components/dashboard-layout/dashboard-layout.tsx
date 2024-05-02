@@ -35,10 +35,10 @@ export const DashboardLayout = ({ className }: DashboardLayoutProps) => {
                     >
                         <div className={styles.mainColumn}>
                             <Balance />
+                            <Goals />
                             <TransactionHistory />
                         </div>
                         <div className={styles.secondaryColumn}>
-                            <Goals />
                             <OutcomeStatistics />
                             <div className={styles.userActionsSection}>
                                 <NewTransaction />

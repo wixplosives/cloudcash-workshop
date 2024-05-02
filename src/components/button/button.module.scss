@@ -18,7 +18,7 @@
     padding-bottom: $spacing-1-5;
     padding-left: $spacing-2-5;
     padding-right: $spacing-2-5;
-    background-color: $color-upgrade;
+    background-color: $color-light-blue;
     color: $color-primary;
 
     &:focus-visible {
@@ -27,5 +27,8 @@
         outline: -moz-mac-focusring auto 1px;
         outline: -webkit-focus-ring-color auto 1px;
     }
-    border-radius: 40px;
+    border-radius: $radius-card;
+    &:hover {
+        background-color: $color-blue;
+    }
 }
